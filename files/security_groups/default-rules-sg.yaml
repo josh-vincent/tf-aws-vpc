@@ -1,0 +1,22 @@
+---
+rule1 :
+    direction: "ingress"
+    from_port   : 3389
+    to_port     : 3389
+    protocol    : "TCP"
+    cidr_blocks : ["0.0.0.0/0"]
+    description : "Inbound RDP"
+rule2 :
+    direction: "egress"
+    from_port   : 80
+    to_port     : 80
+    protocol    : "TCP"
+    cidr_blocks : ["0.0.0.0/0"]
+    description : "Allow outbound to any - HTTP"
+rule3 :
+    direction: "egress"
+    from_port   : 443
+    to_port     : 443
+    protocol    : "TCP"
+    cidr_blocks : ["0.0.0.0/0"]
+    description : "Allow outbound to any - HTTPS"

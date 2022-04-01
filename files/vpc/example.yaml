@@ -1,0 +1,41 @@
+---
+example-test-vpc:
+  dhcp_options:
+    domain_name: "ap-southeast-2.compute.internal"
+    domain_name_servers: []
+  enable_dns_hostnames: true
+  attach_to_tgw:  false
+  cidr: "10.16.0.0/16"
+  enable_ipv6: true
+  subnets:
+    #A
+#    core-test-tgw-attachment-2a:
+#      cidr: "10.16.0.0/20"
+    example-test-db-2a:
+      cidr: "10.16.16.0/20"
+    example-test-app-2a:
+      cidr: "10.16.32.0/20"
+    example-test-web-2a:
+      cidr: "10.16.48.0/20"
+    #B
+#    core-test-tgw-attachment-2b:
+#      cidr: "10.16.64.0/20"
+    example-test-db-2b:
+      cidr: "10.16.80.0/20"
+    example-test-app-2b:
+      cidr: "10.16.96.0/20"
+    example-test-web-2b:
+      cidr: "10.16.112.0/20"
+    #C
+#    core-test-tgw-attachment-2c:
+#      cidr: "10.16.128.0/20"
+    example-test-db-2c:
+      cidr: "10.16.144.0/20"
+    example-test-app-2c:
+      cidr: "10.16.160.0/20"
+    example-test-web-2c:
+      cidr: "10.16.176.0/20"
+
+
+
+
